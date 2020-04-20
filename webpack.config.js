@@ -34,7 +34,7 @@ module.exports = {
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: './js/bundle.js',
+    filename: './js/main.js',
   },
   devtool: 'source-map',
   module: {
@@ -120,7 +120,7 @@ module.exports = {
   plugins: [
     new webpack.ProgressPlugin(),
     new MiniCssExtractPlugin({
-      filename: './css/style.bundle.css',
+      filename: './css/main.css',
     }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin([{
@@ -128,11 +128,11 @@ module.exports = {
       to: './fonts',
     },
     {
-      from: './src/favicon',
+      from: './src/favicons',
       to: './favicon',
     },
     {
-      from: './src/img',
+      from: './src/images',
       to: './img',
     },
     {

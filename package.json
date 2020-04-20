@@ -1,9 +1,9 @@
 {
-  "name": "template-front-end-project-webpack-bootstrap",
+  "name": "education-portal-front-end",
   "version": "1.0.0",
   "description": "",
   "private": true,
-  "main": "dist/js/bundle.js",
+  "main": "dist/js/main.js",
   "scripts": {
     "test": "jest",
     "dev": "webpack --mode development",
@@ -17,14 +17,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fedorsimakov/template-front-end-project-webpack.git"
+    "url": "git+https://github.com/fedorsimakov/education-portal-front-end.git"
   },
   "author": "fedorsimakov",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/fedorsimakov/template-front-end-project-webpack/issues"
+    "url": "https://github.com/fedorsimakov/education-portal-front-end/issues"
   },
-  "homepage": "https://github.com/fedorsimakov/template-front-end-project-webpack#readme",
+  "homepage": "https://github.com/fedorsimakov/education-portal-front-end#readme",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
