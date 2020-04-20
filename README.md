@@ -1,1 +1,1 @@
-# template-front-end-project-webpack
+# education-portal-front-end
