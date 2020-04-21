@@ -105,3 +105,6 @@ dist
 
 #Sublime Text
 *.sublime-workspace
+
+#temp dir
+layout/

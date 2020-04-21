@@ -56,18 +56,18 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              // name: '[path][name].[ext]',
+              name: 'images/[name].[ext]',
             },
           },
         ],
       },
       {
-        test: /\.(ttf|otf|woff|woff2)$/i,
+        test: /\.(ttf|eot|otf|woff|woff2)$/i,
         use: [
           {
             loader: 'file-loader',
             options: {
-              // name: '[path][name].[ext]',
+              name: 'fonts/[name].[ext]',
             },
           },
         ],
@@ -78,13 +78,14 @@ module.exports = {
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
-            options: {},
+            options: {
+              publicPath: '../',
+            },
           },
           {
             loader: 'css-loader',
             options: {
               sourceMap: true,
-              url: false, // after added file-loader and resolve-url-loader
             },
           },
           {
@@ -119,6 +120,11 @@ module.exports = {
   },
   plugins: [
     new webpack.ProgressPlugin(),
+    new webpack.ProvidePlugin({
+      jQuery: 'jquery',
+      $: 'jquery',
+      jquery: 'jquery',
+    }),
     new MiniCssExtractPlugin({
       filename: './css/main.css',
     }),
@@ -129,11 +135,11 @@ module.exports = {
     },
     {
       from: './src/favicons',
-      to: './favicon',
+      to: './favicons',
     },
     {
       from: './src/images',
-      to: './img',
+      to: './images',
     },
     {
       from: './src/uploads',

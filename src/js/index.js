@@ -1,15 +1,17 @@
-import jQuery from 'jquery';
-import popper from 'popper.js';
+import 'jquery';
+import 'popper.js';
 
 // **************************************
 // * Option A: Include all of Bootstrap *
 // **************************************
 
-import bootstrap from 'bootstrap';
+import 'bootstrap';
 
 // ****************************************
 // * Option B: Include parts of Bootstrap *
 // ****************************************
+
+// import 'bootstrap/js/dist/util';
 
 // import 'bootstrap/js/dist/alert';
 // import 'bootstrap/js/dist/button';
@@ -23,6 +25,5 @@ import bootstrap from 'bootstrap';
 // import 'bootstrap/js/dist/tab';
 // import 'bootstrap/js/dist/toast';
 // import 'bootstrap/js/dist/tooltip';
-// import 'bootstrap/js/dist/util';
 
 console.log('Hello, world');
