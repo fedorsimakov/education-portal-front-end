@@ -11,23 +11,41 @@
 // Custom 1 Bootstrap
 $enable-deprecation-messages: true;
 
-$light-green-1: #83c3bc;
-$light-green-2: #badad6;
+$mint-1: #83c3bc;
+$mint-2: #badad6;
 
-$light-green-3: #599416;
-$light-green-4: #c5eb9b;
+$blue-1: #3fb3dc;
+$blue-2: #cbeffd;
+
+$purple-1: #9169c2;
+$purple-2: #eaddfb;
+
+$green-1: #43baa7;
+$green-2: #c6ebe4;
 
 $colors: (
-  "light-green-1": $light-green-1,
-  "light-green-2": $light-green-2
+  "mint-1": $mint-1,
+  "mint-2": $mint-2,
+  "blue-1": $blue-1,
+  "blue-2": $blue-2,
+  "purple-1": $purple-1,
+  "purple-2": $purple-2,
+  "green-1": $green-1,
+  "green-2": $green-2
 );
 
-$unauthorized-user-primary: $light-green-1;
-$unauthorized-user-secondary: $light-green-2;
+$unauthorized-user-primary: $mint-1;
+$unauthorized-user-secondary: $mint-2;
+$educator-primary: $blue-1;
+$educator-secondary: $blue-2;
+$child-primary: $green-1;
+$child-secondary: $green-2;
+$parent-primary: $purple-1;
+$parent-secondary: $purple-2;
 
 $theme-colors: (
-  "unauthorized-user-primary": $unauthorized-user-primary,
-  "unauthorized-user-secondary": $unauthorized-user-secondary,
+  "unauthorized-user-primary": $parent-primary,
+  "unauthorized-user-secondary": $parent-secondary,
 );
 
 // Required
