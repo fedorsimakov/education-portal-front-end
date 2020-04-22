@@ -1,0 +1,70 @@
+
+.custom-top-menu {
+	min-height: 65px;
+}
+
+.custom-row-header-personal-account {
+	padding-top: 75px;
+	min-height: 120px;
+}
+
+.custom-row-header {
+	padding-top: 75px;
+	min-height: 275px;
+}
+
+.custom-site-title-1 {
+	font-size: 18px;
+}
+
+.custom-site-title-2 {
+	font-size: 24px;
+}
+
+.custom-site-title-3 {
+	font-size: 14px;
+
+}
+
+.contact-number{
+	font-size: 20px;
+}
+
+.back-call a{
+	font-size: 14px;
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.social-network a {
+	color: #ffffff;
+}
+
+footer {
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.custom-row-footer {
+	min-height: 150px;
+}
+
+.feedback-footer a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.custom-link-list-footer a{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.custom-replenishment-link-footer a{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.custom-payment-systems-footer {
+	color: #ffffff;
+}
+

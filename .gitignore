@@ -107,4 +107,4 @@ dist
 *.sublime-workspace
 
 #temp dir
-layout/
+#layout/

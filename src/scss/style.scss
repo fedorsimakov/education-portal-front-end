@@ -1,36 +1,49 @@
-/**************************************/
-/* Option A: Include all of Bootstrap */
-/**************************************/
+/* ************************************ */
+/* Option A: Include all of Bootstrap   */
+/* ************************************ */
 
 /* @import "~bootstrap/scss/bootstrap"; */
 
-/****************************************/
-/* Option B: Include parts of Bootstrap */
-/****************************************/
+/* ************************************** */
+/* Option B: Include parts of Bootstrap   */
+/* ************************************** */
 
-// Custom
+// Custom 1 Bootstrap
 $enable-deprecation-messages: true;
 
-$light-green-1: #599416;
-$light-green-2: #c5eb9b;
+$light-green-1: #83c3bc;
+$light-green-2: #badad6;
 
-$theme-colors: (
+$light-green-3: #599416;
+$light-green-4: #c5eb9b;
+
+$colors: (
   "light-green-1": $light-green-1,
   "light-green-2": $light-green-2
 );
 
-$theme-colors: (
-  "unauthorized-user-primary": $light-green-1,
-  "unauthorized-user-secondary": $light-green-2
-);
+$unauthorized-user-primary: $light-green-1;
+$unauthorized-user-secondary: $light-green-2;
 
+$theme-colors: (
+  "unauthorized-user-primary": $unauthorized-user-primary,
+  "unauthorized-user-secondary": $unauthorized-user-secondary,
+);
 
 // Required
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
-// Custom (change delete)
+// Custom 2 Bootstrap
+$navbar-dark-color:                 rgba($white, .8);
+$navbar-dark-hover-color:           rgba($white, .9);
+$navbar-dark-active-color:          $white;
+$navbar-dark-disabled-color:        rgba($white, .7);
+$navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-dark-toggler-border-color:  rgba($white, .6);
+
+$nav-pills-link-active-bg: #ffffff;
 
 
 // Optional
@@ -69,7 +82,26 @@ $theme-colors: (
 @import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/print";
 
+//Custom 3 Bootstrap
+.nav-pills {
+
+  .nav-link{
+    color: $black;
+    background-color: $white;
+    margin-top: 0.2rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .nav-link.active,
+  .show > .nav-link {
+    color: $white;
+    background-color: map-get($theme-colors, "unauthorized-user-primary");
+  }
+}
+
 // FontAwesome
 @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "~@fortawesome/fontawesome-free/scss/solid.scss";
 @import "~@fortawesome/fontawesome-free/scss/brands.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+
