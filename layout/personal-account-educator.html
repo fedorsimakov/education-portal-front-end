@@ -16,6 +16,10 @@
     					<span class="navbar-toggler-icon"></span>
   					</button>
 
+            <a class="navbar-brand" href="#">
+              <img src="images/logo-color.svg" width="33" height="33" class="d-inline-block align-top" alt="">
+            </a>
+
   					<div class="collapse navbar-collapse" id="topMenuNavbars">
     					<ul class="navbar-nav flex-grow-1">
       						<li class="nav-item mx-lg-2 active">
@@ -78,10 +82,11 @@
 		    </nav>
 
           <div class="custom-row-header-personal-account">
-            <ul class="nav nav-fill">
-              <li class="nav-item dropdown">
-                <i class="fas fa-user-graduate"></i>
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Учаева Мария Ивановна</a>
+            <ul class="nav nav-pills nav-fill">
+              <li class="nav-item dropdown mx-1 mb-1">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-user-graduate"></i> Учаева Мария Ивановна
+                </a>
                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="#">Редактировать профиль</a>
                   <a class="dropdown-item" href="#">Добавить образовательную организацию</a>
@@ -91,23 +96,29 @@
                   <a class="dropdown-item" href="#">Пригласить коллегу</a>
                 </div>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Сообщения</a>
+              <li class="nav-item dropdown mx-1 mb-1">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class="far fa-envelope"></i> Сообщения
+                </a>
                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="#">Личные сообщения</a>
                   <a class="dropdown-item" href="#">Уведомления</a>
                   <a class="dropdown-item" href="#">Рассылка</a>
                 </div>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Баланс (100 руб.)</a>
+              <li class="nav-item dropdown mx-1 mb-1">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-wallet"></i> Баланс (100 руб.)
+                </a>
                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="#">Пополнить баланс</a>
                   <a class="dropdown-item" href="#">Перевести другому пользователю</a>
                 </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Выход</a>
+              <li class="nav-item mx-1 mb-1">
+                <a class="nav-link active" href="#">
+                  <i class="fas fa-sign-out-alt"></i> Выход
+                </a>
               </li>
             </ul>
           </div>
@@ -116,8 +127,8 @@
 
       <div class="flex-grow-1 container-fluid">
 			  <div class="row">
-          <nav class="col-12 col-md-3 px-4 py-4">
-            <ul class="nav flex-column nav-pills">
+          <nav class="col-12 col-md-3 p-3">
+            <ul class="nav flex-column nav-pills shadow">
               <li class="nav-item dropright">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Олимпиады</a>
                 <div class="dropdown-menu">
@@ -157,42 +168,58 @@
               </li>
             </ul>
           </nav>
-          <main class="col-12 col-md-9 p-3">
+          <main class="col-12 col-md-6 p-3">
 
-            <div class="row">
-                <div class="col-12 col-lg-4 p-3">
-                  <div class="card">
-                    <img src="images/default.jpg" class="card-img-top" alt="">
-                    <div class="card-body text-center">
-                      <h5 class="card-title">Педагог</h5>
-                      <p class="card-text">Вам доступна регистрация в качестве педагога</p>
-                      <a href="#" class="btn btn-success">Зарегистрироваться</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4 p-3">
-                  <div class="card">
-                    <img src="images/default.jpg" class="card-img-top" alt="">
-                    <div class="card-body text-center">
-                      <h5 class="card-title">Ребенок</h5>
-                      <p class="card-text">Ребенка регистрирует педагог или родитель</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4 p-3">
-                  <div class="card">
-                    <img src="images/default.jpg" class="card-img-top" alt="">
-                    <div class="card-body text-center">
-                      <h5 class="card-title">Родитель</h5>
-                      <p class="card-text">Вам доступна регистрация в качестве родителя</p>
-                      <a href="#" class="btn btn-success">Зарегистрироваться</a>
-                    </div>
-                  </div>
-                </div>
-            </div>
+            <p class="h3 text-uppercase font-weight-bold">Панель управления</p>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Панель управления</li>
+                <li class="breadcrumb-item active" aria-current="page">Мои достижения</li>
+              </ol>
+            </nav>
+            
+            <section class="shadow bg-white p-3 rounded-lg">
+              <h4>Обучение</h4>
+              <p>...</p>
+              <h4>Интернет-магазин</h4>
+              <p>...</p>
+            </section>
+
           
-            <div class="text-center">У Вас появились вопросы или предложения? <a href="#">Напишите нам.</a></div>
+            <div class="text-center mt-3">
+              У Вас появились вопросы или предложения? <a href="#">Напишите нам.</a>
+            </div>
           </main>
+
+          <nav class="col-12 col-md-3 p-3">
+            <ul class="nav flex-column nav-pills shadow">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Панель управления</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Мои достижения</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Мои группы (классы)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Мои заказы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Избранное</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ранее просмотренное</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Настройки</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Помощь</a>
+              </li>
+            </ul>
+          </nav>          
+
         </div>
 			</div>
 			<footer class="container-fluid bg-unauthorized-user-primary">
@@ -246,6 +273,5 @@
 			</footer>
 		</div>
 		<script src="../dist/js/main.js" charset="utf-8"></script>
-    <script src="metismenu/metisMenu.js" charset="utf-8"></script>
 	</body>
 </html>
