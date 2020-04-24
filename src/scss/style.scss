@@ -1,3 +1,77 @@
+
+// Custom Bootstrap (step 0)
+
+$mint-1: #83c3bc;
+$mint-2: #badad6;
+$purple-1: #9169c2;
+$purple-2: #eaddfb;
+$blue-1: #3fb3dc;
+$blue-2: #cbeffd;
+$green-1: #43baa7;
+$green-2: #c6ebe4;
+
+$custom-grey: #e2e2e2;
+
+$colors: (
+  "mint-1": $mint-1,
+  "mint-2": $mint-2,
+  "purple-1": $purple-1,
+  "purple-2": $purple-2,
+  "blue-1": $blue-1,
+  "blue-2": $blue-2,
+  "green-1": $green-1,
+  "green-2": $green-2,
+  "custom-grey": $custom-grey
+);
+
+$unauthorized-user-primary: $mint-1;
+$unauthorized-user-secondary: $mint-2;
+$parent-primary: $purple-1;
+$parent-secondary: $purple-2;
+$educator-primary: $blue-1;
+$educator-secondary: $blue-2;
+$child-primary: $green-1;
+$child-secondary: $green-2;
+
+$theme-colors: (
+  "unauthorized-user-primary": $unauthorized-user-primary,
+  "unauthorized-user-secondary": $unauthorized-user-secondary,
+  "parent-primary": $parent-primary,
+  "parent-secondary": $parent-secondary,
+  "educator-primary": $educator-primary,
+  "educator-secondary": $educator-secondary,
+  "child-primary": $child-primary,
+  "child-secondary": $child-secondary,
+  "custom-grey": $custom-grey
+);
+
+$breadcrumb-divider: quote(">");
+
+$current-user-color-primary: 'unauthorized-user' !default;
+
+@if ($current-user-group == 'unauthorized-user') {
+  $current-user-color-primary: 'unauthorized-user-primary';
+  $current-user-color-secondary: 'unauthorized-user-secondary';
+}
+
+@if ($current-user-group == 'parent') {
+  $current-user-color-primary: 'parent-primary';
+  $current-user-color-secondary: 'parent-secondary';
+}
+
+@if ($current-user-group == 'educator') {
+  $current-user-color-primary: 'educator-primary';
+  $current-user-color-secondary: 'educator-secondary';
+}
+
+@if ($current-user-group == 'child') {
+  $current-user-color-primary: 'child-primary';
+  $current-user-color-secondary: 'child-secondary';
+}
+
+// Custom Bootstrap (step 1)
+$enable-deprecation-messages: true;
+
 /* ************************************ */
 /* Option A: Include all of Bootstrap   */
 /* ************************************ */
@@ -8,52 +82,12 @@
 /* Option B: Include parts of Bootstrap   */
 /* ************************************** */
 
-// Custom 1 Bootstrap
-$enable-deprecation-messages: true;
-
-$mint-1: #83c3bc;
-$mint-2: #badad6;
-
-$blue-1: #3fb3dc;
-$blue-2: #cbeffd;
-
-$purple-1: #9169c2;
-$purple-2: #eaddfb;
-
-$green-1: #43baa7;
-$green-2: #c6ebe4;
-
-$colors: (
-  "mint-1": $mint-1,
-  "mint-2": $mint-2,
-  "blue-1": $blue-1,
-  "blue-2": $blue-2,
-  "purple-1": $purple-1,
-  "purple-2": $purple-2,
-  "green-1": $green-1,
-  "green-2": $green-2
-);
-
-$unauthorized-user-primary: $mint-1;
-$unauthorized-user-secondary: $mint-2;
-$educator-primary: $blue-1;
-$educator-secondary: $blue-2;
-$child-primary: $green-1;
-$child-secondary: $green-2;
-$parent-primary: $purple-1;
-$parent-secondary: $purple-2;
-
-$theme-colors: (
-  "unauthorized-user-primary": $parent-primary,
-  "unauthorized-user-secondary": $parent-secondary,
-);
-
 // Required
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
-// Custom 2 Bootstrap
+// Custom Bootstrap (step 2)
 $navbar-dark-color:                 rgba($white, .8);
 $navbar-dark-hover-color:           rgba($white, .9);
 $navbar-dark-active-color:          $white;
@@ -62,7 +96,6 @@ $navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://w
 $navbar-dark-toggler-border-color:  rgba($white, .6);
 
 $nav-pills-link-active-bg: #ffffff;
-
 
 // Optional
 @import "~bootstrap/scss/root";
@@ -100,20 +133,22 @@ $nav-pills-link-active-bg: #ffffff;
 @import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/print";
 
-//Custom 3 Bootstrap
+// Custom Bootstrap (step 3)
+
 .nav-pills {
 
-  .nav-link{
+  .nav-link {
     color: $black;
     background-color: $white;
     margin-top: 0.2rem;
-    padding: 0.6rem 1rem;
+    padding: 1rem 1rem;
+    text-align: center;
   }
 
   .nav-link.active,
   .show > .nav-link {
     color: $white;
-    background-color: map-get($theme-colors, "unauthorized-user-primary");
+    background-color: map-get($theme-colors, $current-user-color-primary);
   }
 }
 

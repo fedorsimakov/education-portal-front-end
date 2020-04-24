@@ -28,13 +28,16 @@ const generateHtmlPlugins = (templateDir) => {
 const htmlPlugins = generateHtmlPlugins('./src/html/views');
 
 module.exports = {
-  entry: [
-    './src/js/index.js',
-    './src/scss/style.scss',
-  ],
+  entry: {
+    main: './src/js/index.js',
+    unauthorized: './src/scss/unauthorized-user-style.scss',
+    educator: './src/scss/educator-style.scss',
+    child: './src/scss/child-style.scss',
+    parent: './src/scss/parent-style.scss',
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: './js/main.js',
+    filename: './js/[name].js',
   },
   devtool: 'source-map',
   module: {
@@ -121,12 +124,12 @@ module.exports = {
   plugins: [
     new webpack.ProgressPlugin(),
     new webpack.ProvidePlugin({
-      jQuery: 'jquery',
       $: 'jquery',
-      jquery: 'jquery',
+      jQuery: 'jquery',
     }),
     new MiniCssExtractPlugin({
-      filename: './css/main.css',
+      // filename: './css/[name].css',
+      moduleFilename: ({ name }) => `./css/${name}.css`,
     }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin([{

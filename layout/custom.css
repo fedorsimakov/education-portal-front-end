@@ -1,70 +1,100 @@
 
 .custom-top-menu {
-	min-height: 65px;
+  min-height: 65px;
 }
 
 .custom-row-header-personal-account {
-	padding-top: 65px;
-	min-height: 115px;
+  padding-top: 75px;
+  min-height: 125px;
+}
+
+.custom-row-header-personal-account a.nav-link {
+  color: #ffffff;
 }
 
 .custom-row-header {
-	padding-top: 75px;
-	min-height: 275px;
+  padding-top: 65px;
+  min-height: 265px;
+}
+
+.logo-color {
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.3));
 }
 
 .custom-site-title-1 {
-	font-size: 18px;
+  font-size: 18px;
 }
 
 .custom-site-title-2 {
-	font-size: 24px;
+  font-size: 24px;
 }
 
 .custom-site-title-3 {
-	font-size: 14px;
-
+  font-size: 14px;
 }
 
-.contact-number{
-	font-size: 20px;
+.contact-number {
+  font-size: 20px;
 }
 
 .back-call a{
-	font-size: 14px;
-	color: #ffffff;
-	text-decoration: underline;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .social-network a {
-	color: #ffffff;
+  color: #ffffff;
 }
 
 footer {
-	font-size: 14px;
-	color: #ffffff;
+  font-size: 14px;
+  color: #ffffff;
 }
 
 .custom-row-footer {
-	min-height: 150px;
+  min-height: 150px;
 }
 
 .feedback-footer a {
-	color: #ffffff;
-	text-decoration: underline;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .custom-link-list-footer a{
-	color: #ffffff;
-	text-decoration: underline;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .custom-replenishment-link-footer a{
-	color: #ffffff;
-	text-decoration: underline;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .custom-payment-systems-footer {
-	color: #ffffff;
+  color: #ffffff;
 }
 
+#leftSidebarMenu a {
+  display: block;
+  padding: 5px 0;
+  color: #000000;
+}
+
+#leftSidebarMenu button {
+  color: #000000;
+}
+
+#leftSidebarMenu i {
+  font-size: .5em;
+}
+
+#leftSidebarMenu .card-header {
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+}
+
+#leftSidebarMenu .card-body{
+  padding-top: .8rem;
+  padding-bottom: .8rem;
+}

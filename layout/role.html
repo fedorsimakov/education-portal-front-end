@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="../dist/css/main.css">
+  <link rel="stylesheet" type="text/css" href="../dist/css/unauthorized.css">
   <link rel="stylesheet" type="text/css" href="custom.css">
-  <title>Главная страница</title>
+  <title>Страница выбора роли</title>
 </head>
 	<body class="h-100 bg-unauthorized-user-secondary">
     <div class="h-100 d-flex flex-column justify-content-between">
@@ -78,12 +78,12 @@
 		    </nav>
 
         <div class="row custom-row-header">
-          <div class="col-12 col-md-3 d-flex justify-content-center align-items-center">
+          <div class="col-12 col-md-3 d-flex justify-content-center align-items-center p-3">
             <a href="#" class="">
-              <img src="images/logo-color.svg" width="85" alt="">
+              <img src="images/logo-color.svg" width="85" alt="" class="logo-color">
             </a>
           </div>
-            
+
           <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center text-white">
             <div>
               <div class="d-flex justify-content-between">
@@ -100,9 +100,9 @@
               </div>
             </div>
           </div>
-            
+
           <div class="col-12 col-md-5 d-flex flex-column justify-content-center align-items-center text-white">
-            <div>
+            <div class="p-3">
               <div class="d-flex">
                 <div class="flex-shrink-0"><i class="fas fa-phone-alt"></i></div>
                 <div class="flex-grow-1 d-flex flex-column ml-3">
@@ -117,7 +117,7 @@
                   <div>Казахстан, г. Алматы, ул. Ленина, д. 48</div>
                 </div>
               </div>
-              <div class="d-flex justify-content-around mt-3 mb-3 social-network">
+              <div class="d-flex justify-content-around social-network mt-3">
                 <a href="#"><i class="fab fa-vk fa-2x"></i></a>
                 <a href="#"><i class="fab fa-odnoklassniki-square fa-2x"></i></a>
                 <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
@@ -133,82 +133,141 @@
       <div class="flex-grow-1 container-fluid">
 			  <div class="row">
           <nav class="col-12 col-md-3 p-3">
-            <ul class="nav flex-column nav-pills shadow">
-              <li class="nav-item dropright">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Олимпиады</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Онлайн-олимпиады для детей</a>
-                </div>
-              </li>
-              <li class="nav-item dropright">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Викторины</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Онлайн-викторины для детей</a>
-                </div>
-              </li>
-              <li class="nav-item dropright">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Конкурсы</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Конкурсы для детей</a>
-                  <a class="dropdown-item" href="#">Конкурсы для педагогов</a>
-                </div>
-              </li>
-              <li class="nav-item dropright">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Курсы</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Онлайн-курсы для детей</a>
-                  <a class="dropdown-item" href="#">Онлайн-курсы для педагогов</a>
-                  <a class="dropdown-item" href="#">Очные курсы для педагогов</a>
-                  <a class="dropdown-item" href="#">Очные курсы для педагогов</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Настольные игры</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Онлайн-школа</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Методическая копилка</a>
-              </li>
-            </ul>
+
+<div class="accordion mt-3 shadow" id="leftSidebarMenu">
+
+
+  <div class="card">
+    <div class="card-header" id="menuItem1">
+      <h2 class="mb-0">
+        <i class="fas fa-plus"></i> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#menuItem1Collapse" aria-expanded="true" aria-controls="menuItem1Collapse">
+          Олимпиады
+        </button>
+      </h2>
+    </div>
+
+    <div id="menuItem1Collapse" class="collapse" aria-labelledby="menuItem1" data-parent="#leftSidebarMenu">
+      <div class="card-body">
+        <a href="#">Онлайн-олимпиады для детей</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="menuItem2">
+      <h2 class="mb-0">
+        <i class="fas fa-plus"></i> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#menuItem2Collapse" aria-expanded="true" aria-controls="menuItem2Collapse">
+          Викторины
+        </button>
+      </h2>
+    </div>
+
+    <div id="menuItem2Collapse" class="collapse" aria-labelledby="menuItem2" data-parent="#leftSidebarMenu">
+      <div class="card-body">
+        <a href="#">Викторины для детей</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="menuItem3">
+      <h2 class="mb-0">
+        <i class="fas fa-plus"></i> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#menuItem3Collapse" aria-expanded="true" aria-controls="menuItem3Collapse">
+          Конкурсы
+        </button>
+      </h2>
+    </div>
+
+    <div id="menuItem3Collapse" class="collapse" aria-labelledby="menuItem3" data-parent="#leftSidebarMenu">
+      <div class="card-body">
+        <a href="#">Конкурсы для детей</a>
+        <a href="#">Конкурсы для педагогов</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="menuItem4">
+      <h2 class="mb-0">
+        <i class="fas fa-plus"></i> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#menuItem4Collapse" aria-expanded="true" aria-controls="menuItem4Collapse">
+          Курсы
+        </button>
+      </h2>
+    </div>
+
+    <div id="menuItem4Collapse" class="collapse" aria-labelledby="menuItem4" data-parent="#leftSidebarMenu">
+      <div class="card-body">
+        <a href="#">Онлайн-курсы для детей</a>
+        <a href="#">Онлайн-курсы для педагогов</a>
+        <a href="#">Очные курсы для педагогов</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div id="menuItem5Collapse">
+      <div class="card-body">
+        <a href="#">Настольные игры</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div id="menuItem6Collapse">
+      <div class="card-body">
+        <a href="#">Онлайн-школа</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div id="menuItem7Collapse">
+      <div class="card-body">
+        <a href="#">Методическая копилка</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
           </nav>
           <main class="col-12 col-md-9 p-3">
-
+            <h3 class="text-center">Выберите свою роль</h3>
             <div class="row">
-                <div class="col-12 col-lg-4 p-3">
-                  <div class="card shadow">
-                    <img src="images/default.jpg" class="card-img-top" alt="">
+                <div class="col-12 col-lg-4 mt-3">
+                  <div class="card shadow h-100 p-3">
+                    <img src="images/default.jpg" class="card-img-top rounded-lg" alt="">
                     <div class="card-body text-center">
                       <h5 class="card-title">Педагог</h5>
                       <p class="card-text">Вам доступна регистрация в качестве педагога</p>
-                      <a href="#" class="btn btn-success">Зарегистрироваться</a>
+                      <a href="#" class="btn btn-outline-dark">Зарегистрироваться</a>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-lg-4 p-3">
-                  <div class="card shadow">
-                    <img src="images/default.jpg" class="card-img-top" alt="">
-                    <div class="card-body text-center">
-                      <h5 class="card-title">Ребенок</h5>
-                      <p class="card-text">Ребенка регистрирует педагог или родитель</p>
+                <div class="col-12 col-lg-4 mt-3">
+                  <div class="card shadow h-100 p-3">
+                    <img src="images/default.jpg" class="card-img-top rounded-lg" alt="">
+                    <div class="card-body text-center d-flex flex-column align-items-end">
+                      <h5 class="card-title align-self-center">Ребенок</h5>
+                      <p class="card-text align-self-center">...</p>
+                      <p class="card-text align-self-center mt-auto">Ребенка регистрирует педагог или родитель</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-lg-4 p-3">
-                  <div class="card shadow">
-                    <img src="images/default.jpg" class="card-img-top" alt="">
+                <div class="col-12 col-lg-4 mt-3">
+                  <div class="card shadow h-100 p-3">
+                    <img src="images/default.jpg" class="card-img-top rounded-lg" alt="">
                     <div class="card-body text-center">
                       <h5 class="card-title">Родитель</h5>
                       <p class="card-text">Вам доступна регистрация в качестве родителя</p>
-                      <a href="#" class="btn btn-success">Зарегистрироваться</a>
+                      <a href="#" class="btn btn btn-outline-dark">Зарегистрироваться</a>
                     </div>
                   </div>
                 </div>
             </div>
-          
+
             <div class="text-center mt-3">
-              У Вас появились вопросы или предложения? <a href="#">Напишите нам.</a>
+              У Вас появились вопросы или предложения? <a href="#" data-toggle="modal" data-target="#myModal">Напишите нам.</a>
             </div>
           </main>
         </div>
@@ -228,7 +287,7 @@
             <div>Казахстан, г. Алматы, ул. Ленина, д. 48</div>
             <div class="feedback-footer"><i class="far fa-envelope"></i> <a href="#">Написать нам</a></div>
             <div>&copy; 2020 «Новые кадры»</div>
-          </div>  
+          </div>
         </div>
         <div class="col-12 col-lg-3 d-flex justify-content-center align-items-center py-2">
           <div class="text-center text-lg-left custom-link-list-footer">
@@ -241,7 +300,7 @@
         </div>
         <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center py-2">
           <div>
-            <div class="d-flex justify-content-around mt-3 mb-3 social-network">
+            <div class="d-flex justify-content-around social-network p-3">
               <a href="#"><i class="fab fa-vk fa-2x"></i></a>
               <a href="#"><i class="fab fa-odnoklassniki-square fa-2x"></i></a>
               <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
@@ -259,11 +318,55 @@
               <i class="fab fa-cc-paypal fa-3x"></i>
             </div>
           </div>
-        </div>  
-       </div>	
+        </div>
+       </div>
 			</footer>
 		</div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content p-5">
+          <div class="modal-header border-bottom-0">
+            <h5 class="modal-title text-uppercase font-weight-bold" id="myModalLabel">Напишите нам</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="form-group">
+                <label class="text-uppercase" for="exampleFormControlSelect2">Тема обращения</label>
+                <select class="form-control" id="exampleFormControlSelect2">
+                  <option>Запись на курс</option>
+                  <option>Покупки в интернет-магазине</option>
+                  <option>Регистрация личного кабинета</option>
+                  <option>Сотрудничество</option>
+                  <option>Отзыв</option>
+                  <option>Другая тема</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="text-uppercase" for="formGroupExampleInput">Ваше имя</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+              </div>
+              <div class="form-group">
+                <label class="text-uppercase" for="exampleInputEmail1">Ваш E-mail</label>
+                <input type="email" class="form-control" id="exampleInputEmail1">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Принимаю <a class="text-dark" href="#">соглашения об обработке персональных данных</a></label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-start border-top-0">
+            <button type="button" class="btn btn-custom-grey" data-dismiss="modal">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 		<script src="../dist/js/main.js" charset="utf-8"></script>
-    <script src="metismenu/metisMenu.js" charset="utf-8"></script>
 	</body>
 </html>

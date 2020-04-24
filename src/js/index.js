@@ -26,4 +26,7 @@ import 'bootstrap';
 // import 'bootstrap/js/dist/toast';
 // import 'bootstrap/js/dist/tooltip';
 
-console.log('Hello, world');
+$(document).ready(() => {
+  // console.log('Hello, world');
+});
+

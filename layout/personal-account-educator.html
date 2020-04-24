@@ -3,21 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="../dist/css/main.css">
+	<link rel="stylesheet" type="text/css" href="../dist/css/educator.css">
   <link rel="stylesheet" type="text/css" href="custom.css">
-  <title>Главная страница</title>
+  <title>Личный кабинет педагога</title>
 </head>
-	<body class="h-100 bg-unauthorized-user-secondary">
+	<body class="h-100 bg-educator-secondary">
     <div class="h-100 d-flex flex-column justify-content-between">
-      <header class="container-fluid bg-unauthorized-user-primary">
+      <header class="container-fluid bg-educator-primary">
 
-		    <nav class="navbar navbar-expand-lg navbar-dark bg-unauthorized-user-primary fixed-top border-bottom border-white custom-top-menu">
+		    <nav class="navbar navbar-expand-lg navbar-dark bg-educator-primary fixed-top border-bottom border-white custom-top-menu">
   					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topMenuNavbars" aria-controls="topMenuNavbars" aria-expanded="false" aria-label="Toggle navigation">
     					<span class="navbar-toggler-icon"></span>
   					</button>
 
             <a class="navbar-brand" href="#">
-              <img src="images/logo-color.svg" width="33" height="33" class="d-inline-block align-top" alt="">
+              <img src="images/logo-color.svg" width="33" height="33" class="d-inline-block align-top logo-color" alt="">
             </a>
 
   					<div class="collapse navbar-collapse" id="topMenuNavbars">
@@ -82,7 +82,7 @@
 		    </nav>
 
           <div class="custom-row-header-personal-account">
-            <ul class="nav nav-pills nav-fill">
+            <ul class="nav nav-fill">
               <li class="nav-item dropdown mx-1 mb-1">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                   <i class="fas fa-user-graduate"></i> Учаева Мария Ивановна
@@ -128,56 +128,114 @@
       <div class="flex-grow-1 container-fluid">
 			  <div class="row">
           <nav class="col-12 col-md-3 p-3">
-            <ul class="nav flex-column nav-pills shadow">
-              <li class="nav-item dropright">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Олимпиады</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Онлайн-олимпиады для детей</a>
-                </div>
-              </li>
-              <li class="nav-item dropright">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Викторины</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Онлайн-викторины для детей</a>
-                </div>
-              </li>
-              <li class="nav-item dropright">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Конкурсы</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Конкурсы для детей</a>
-                  <a class="dropdown-item" href="#">Конкурсы для педагогов</a>
-                </div>
-              </li>
-              <li class="nav-item dropright">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Курсы</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Онлайн-курсы для детей</a>
-                  <a class="dropdown-item" href="#">Онлайн-курсы для педагогов</a>
-                  <a class="dropdown-item" href="#">Очные курсы для педагогов</a>
-                  <a class="dropdown-item" href="#">Очные курсы для педагогов</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Настольные игры</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Онлайн-школа</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Методическая копилка</a>
-              </li>
-            </ul>
+
+<div class="accordion mt-3 shadow" id="leftSidebarMenu">
+
+
+  <div class="card">
+    <div class="card-header" id="menuItem1">
+      <h2 class="my-0">
+        <i class="fas fa-plus"></i> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#menuItem1Collapse" aria-expanded="true" aria-controls="menuItem1Collapse">
+          Олимпиады
+        </button>
+      </h2>
+    </div>
+
+    <div id="menuItem1Collapse" class="collapse" aria-labelledby="menuItem1" data-parent="#leftSidebarMenu">
+      <div class="card-body">
+        <a href="#">Онлайн-олимпиады для детей</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="menuItem2">
+      <h2 class="my-0">
+        <i class="fas fa-plus"></i> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#menuItem2Collapse" aria-expanded="true" aria-controls="menuItem2Collapse">
+          Викторины
+        </button>
+      </h2>
+    </div>
+
+    <div id="menuItem2Collapse" class="collapse" aria-labelledby="menuItem2" data-parent="#leftSidebarMenu">
+      <div class="card-body">
+        <a href="#">Викторины для детей</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="menuItem3">
+      <h2 class="my-0">
+        <i class="fas fa-plus"></i> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#menuItem3Collapse" aria-expanded="true" aria-controls="menuItem3Collapse">
+          Конкурсы
+        </button>
+      </h2>
+    </div>
+
+    <div id="menuItem3Collapse" class="collapse" aria-labelledby="menuItem3" data-parent="#leftSidebarMenu">
+      <div class="card-body">
+        <a href="#">Конкурсы для детей</a>
+        <a href="#">Конкурсы для педагогов</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="menuItem4">
+      <h2 class="my-0 py-0">
+        <i class="fas fa-plus"></i> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#menuItem4Collapse" aria-expanded="true" aria-controls="menuItem4Collapse">
+          Курсы
+        </button>
+      </h2>
+    </div>
+
+    <div id="menuItem4Collapse" class="collapse" aria-labelledby="menuItem4" data-parent="#leftSidebarMenu">
+      <div class="card-body">
+        <a href="#">Онлайн-курсы для детей</a>
+        <a href="#">Онлайн-курсы для педагогов</a>
+        <a href="#">Очные курсы для педагогов</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div id="menuItem5Collapse">
+      <div class="card-body">
+        <a href="#">Настольные игры</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div id="menuItem6Collapse">
+      <div class="card-body">
+        <a href="#">Онлайн-школа</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div id="menuItem7Collapse">
+      <div class="card-body">
+        <a href="#">Методическая копилка</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
           </nav>
           <main class="col-12 col-md-6 p-3">
 
             <p class="h3 text-uppercase font-weight-bold">Панель управления</p>
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
+              <ol class="breadcrumb bg-educator-secondary p-0">
                 <li class="breadcrumb-item active" aria-current="page">Панель управления</li>
                 <li class="breadcrumb-item active" aria-current="page">Мои достижения</li>
               </ol>
             </nav>
-            
+
             <section class="shadow bg-white p-3 rounded-lg">
               <h4>Обучение</h4>
               <p>...</p>
@@ -185,14 +243,14 @@
               <p>...</p>
             </section>
 
-          
+
             <div class="text-center mt-3">
-              У Вас появились вопросы или предложения? <a href="#">Напишите нам.</a>
+              У Вас появились вопросы или предложения? <a href="#" data-toggle="modal" data-target="#myModal">Напишите нам.</a>
             </div>
           </main>
 
           <nav class="col-12 col-md-3 p-3">
-            <ul class="nav flex-column nav-pills shadow">
+            <ul class="nav flex-column nav-pills shadow mt-2">
               <li class="nav-item">
                 <a class="nav-link" href="#">Панель управления</a>
               </li>
@@ -218,11 +276,11 @@
                 <a class="nav-link" href="#">Помощь</a>
               </li>
             </ul>
-          </nav>          
+          </nav>
 
         </div>
 			</div>
-			<footer class="container-fluid bg-unauthorized-user-primary">
+			<footer class="container-fluid bg-educator-primary">
 			 <div class="row custom-row-footer">
         <div class="col-12 col-lg-2 d-flex justify-content-center align-items-center py-4">
             <a href="#" class="">
@@ -237,7 +295,7 @@
             <div>Казахстан, г. Алматы, ул. Ленина, д. 48</div>
             <div class="feedback-footer"><i class="far fa-envelope"></i> <a href="#">Написать нам</a></div>
             <div>&copy; 2020 «Новые кадры»</div>
-          </div>  
+          </div>
         </div>
         <div class="col-12 col-lg-3 d-flex justify-content-center align-items-center py-2">
           <div class="text-center text-lg-left custom-link-list-footer">
@@ -250,7 +308,7 @@
         </div>
         <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center py-2">
           <div>
-            <div class="d-flex justify-content-around mt-3 mb-3 social-network">
+            <div class="d-flex justify-content-around social-network p-3">
               <a href="#"><i class="fab fa-vk fa-2x"></i></a>
               <a href="#"><i class="fab fa-odnoklassniki-square fa-2x"></i></a>
               <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
@@ -259,7 +317,7 @@
               <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
             </div>
             <div class="text-center custom-replenishment-link-footer">
-              Моментально и безопасно оплачивайте услуги и <a href="#">пополняйте баланс</a> Личного кабинета прямо на сайте
+              Моментально и безопасно оплачивайте услуги и <a href="#" data-toggle="modal" data-target="#myModal">пополняйте баланс</a> Личного кабинета прямо на сайте
             </div>
             <div class="d-flex justify-content-around mt-3 mb-3 custom-payment-systems-footer">
               <i class="fab fa-cc-visa fa-3x"></i>
@@ -268,10 +326,55 @@
               <i class="fab fa-cc-paypal fa-3x"></i>
             </div>
           </div>
-        </div>  
-       </div>	
+        </div>
+       </div>
 			</footer>
 		</div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content p-5">
+          <div class="modal-header border-bottom-0">
+            <h5 class="modal-title text-uppercase font-weight-bold" id="myModalLabel">Напишите нам</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="form-group">
+                <label class="text-uppercase" for="exampleFormControlSelect2">Тема обращения</label>
+                <select class="form-control" id="exampleFormControlSelect2">
+                  <option>Запись на курс</option>
+                  <option>Покупки в интернет-магазине</option>
+                  <option>Регистрация личного кабинета</option>
+                  <option>Сотрудничество</option>
+                  <option>Отзыв</option>
+                  <option>Другая тема</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="text-uppercase" for="formGroupExampleInput">Ваше имя</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+              </div>
+              <div class="form-group">
+                <label class="text-uppercase" for="exampleInputEmail1">Ваш E-mail</label>
+                <input type="email" class="form-control" id="exampleInputEmail1">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Принимаю <a class="text-dark" href="#">соглашения об обработке персональных данных</a></label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-start border-top-0">
+            <button type="button" class="btn btn-custom-grey" data-dismiss="modal">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 		<script src="../dist/js/main.js" charset="utf-8"></script>
 	</body>
 </html>
