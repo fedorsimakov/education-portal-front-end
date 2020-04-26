@@ -1,0 +1,171 @@
+<% var data = {
+  title: "Личный кабинет педагога",
+  styleFile: "educator.css",
+  colorPrimary: "educator-primary",
+  colorSecondary: "educator-secondary",
+}; %>
+<%= _.template(require('./../includes/header-personal-account.html').default)(data) %>
+
+          <div class="custom-row-header-personal-account">
+            <ul class="nav nav-fill">
+              <li class="nav-item dropdown mx-1 mb-1">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-user-graduate"></i> Учаева Мария Ивановна
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Редактировать профиль</a>
+                  <a class="dropdown-item" href="#">Добавить образовательную организацию</a>
+                  <a class="dropdown-item" href="#">Добавить группу (класс)</a>
+                  <a class="dropdown-item" href="#">Создать мероприятие</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Пригласить коллегу</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown mx-1 mb-1">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class="far fa-envelope"></i> Сообщения
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Личные сообщения</a>
+                  <a class="dropdown-item" href="#">Уведомления</a>
+                  <a class="dropdown-item" href="#">Рассылка</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown mx-1 mb-1">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-wallet"></i> Баланс (100 руб.)
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Пополнить баланс</a>
+                  <a class="dropdown-item" href="#">Перевести другому пользователю</a>
+                </div>
+              </li>
+              <li class="nav-item mx-1 mb-1">
+                <a class="nav-link active" href="#">
+                  <i class="fas fa-sign-out-alt"></i> Выход
+                </a>
+              </li>
+            </ul>
+          </div>
+
+      </header>
+
+      <div class="flex-grow-1 container-fluid">
+        <div class="row">
+          <nav class="col-12 col-md-3 p-3">
+
+<div class="accordion mt-3 shadow" id="leftSidebarMenu">
+
+
+  <div class="card">
+    <div class="card-header" id="menuItem1">
+      <h2 class="my-0">
+        <i class="fas fa-plus"></i> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#menuItem1Collapse" aria-expanded="true" aria-controls="menuItem1Collapse">
+          Олимпиады
+        </button>
+      </h2>
+    </div>
+
+    <div id="menuItem1Collapse" class="collapse" aria-labelledby="menuItem1" data-parent="#leftSidebarMenu">
+      <div class="card-body">
+        <a href="#">Онлайн-олимпиады для детей</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="menuItem2">
+      <h2 class="my-0">
+        <i class="fas fa-plus"></i> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#menuItem2Collapse" aria-expanded="true" aria-controls="menuItem2Collapse">
+          Викторины
+        </button>
+      </h2>
+    </div>
+
+    <div id="menuItem2Collapse" class="collapse" aria-labelledby="menuItem2" data-parent="#leftSidebarMenu">
+      <div class="card-body">
+        <a href="#">Викторины для детей</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="menuItem3">
+      <h2 class="my-0">
+        <i class="fas fa-plus"></i> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#menuItem3Collapse" aria-expanded="true" aria-controls="menuItem3Collapse">
+          Конкурсы
+        </button>
+      </h2>
+    </div>
+
+    <div id="menuItem3Collapse" class="collapse" aria-labelledby="menuItem3" data-parent="#leftSidebarMenu">
+      <div class="card-body">
+        <a href="#">Конкурсы для детей</a>
+        <a href="#">Конкурсы для педагогов</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="menuItem4">
+      <h2 class="my-0 py-0">
+        <i class="fas fa-plus"></i> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#menuItem4Collapse" aria-expanded="true" aria-controls="menuItem4Collapse">
+          Курсы
+        </button>
+      </h2>
+    </div>
+
+    <div id="menuItem4Collapse" class="collapse" aria-labelledby="menuItem4" data-parent="#leftSidebarMenu">
+      <div class="card-body">
+        <a href="#">Онлайн-курсы для детей</a>
+        <a href="#">Онлайн-курсы для педагогов</a>
+        <a href="#">Очные курсы для педагогов</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div id="menuItem5Collapse">
+      <div class="card-body">
+        <a href="#">Настольные игры</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div id="menuItem6Collapse">
+      <div class="card-body">
+        <a href="#">Онлайн-школа</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div id="menuItem7Collapse">
+      <div class="card-body">
+        <a href="#">Методическая копилка</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+          </nav>
+          <main class="col-12 col-md-6 p-3">
+
+            <p class="h3 text-uppercase font-weight-bold">Панель управления</p>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb bg-<%=data.colorSecondary%> p-0">
+                <li class="breadcrumb-item active" aria-current="page">Панель управления</li>
+                <li class="breadcrumb-item active" aria-current="page">Мои достижения</li>
+              </ol>
+            </nav>
+
+            <section class="shadow bg-white p-3 rounded-lg">
+              <h4>Обучение</h4>
+              <p>...</p>
+              <h4>Интернет-магазин</h4>
+              <p>...</p>
+            </section>
+
+<%= _.template(require('./../includes/footer-personal-account.html').default)(data) %>

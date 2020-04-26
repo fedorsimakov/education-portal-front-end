@@ -1,1 +1,0 @@
-// $('footer').css('background', '#fff');

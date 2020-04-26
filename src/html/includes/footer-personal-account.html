@@ -1,0 +1,137 @@
+            <div class="text-center mt-3">
+              У Вас появились вопросы или предложения? <a href="#" data-toggle="modal" data-target="#myModal">Напишите нам.</a>
+            </div>
+          </main>
+
+          <nav class="col-12 col-md-3 p-3">
+            <ul class="nav flex-column nav-pills shadow">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Панель управления</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Мои достижения</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Мои группы (классы)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Мои родители</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Мои заказы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Избранное</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ранее просмотренное</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Настройки</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Помощь</a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+      <footer class="container-fluid bg-<%=colorPrimary%>">
+       <div class="row custom-row-footer">
+        <div class="col-12 col-lg-2 d-flex justify-content-center align-items-center py-4">
+            <a href="#" class="">
+              <img src="images/logo-monochrome.svg" width="75" alt="">
+            </a>
+        </div>
+        <div class="col-12 col-lg-3 d-flex justify-content-center align-items-center py-2">
+          <div class="text-center text-lg-left">
+            <div class="contact-number font-weight-bold">+7 (000) 000-00-00</div>
+            <div class="back-call"><a href="#">заказать обратный звонок</a></div>
+            <div>Россия, г. Екатеринбург, ул.Ясная д. 20д</div>
+            <div>Казахстан, г. Алматы, ул. Ленина, д. 48</div>
+            <div class="feedback-footer"><i class="far fa-envelope"></i> <a href="#">Написать нам</a></div>
+            <div>&copy; 2020 «Новые кадры»</div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 d-flex justify-content-center align-items-center py-2">
+          <div class="text-center text-lg-left custom-link-list-footer">
+            <div><a href="#">Лицензия на образовательную деятельность</a></div>
+            <div><a href="#">Свидетельство о регистрации СМИ</a></div>
+            <div><a href="#">Документы</a></div>
+            <div><a href="#">Предложение о сотрудничестве</a></div>
+            <div><a href="#">Помощь</a></div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center py-2">
+          <div>
+            <div class="d-flex justify-content-around social-network p-3">
+              <a href="#"><i class="fab fa-vk fa-2x"></i></a>
+              <a href="#"><i class="fab fa-odnoklassniki-square fa-2x"></i></a>
+              <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+              <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+              <a href="#"><i class="fab fa-telegram fa-2x"></i></a>
+              <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+            <div class="text-center custom-replenishment-link-footer">
+              Моментально и безопасно оплачивайте услуги и <a href="#">пополняйте баланс</a> Личного кабинета прямо на сайте
+            </div>
+            <div class="d-flex justify-content-around mt-3 mb-3 custom-payment-systems-footer">
+              <i class="fab fa-cc-visa fa-3x"></i>
+              <i class="fab fa-cc-mastercard fa-3x"></i>
+              <i class="fab fa-cc-apple-pay fa-3x"></i>
+              <i class="fab fa-cc-paypal fa-3x"></i>
+            </div>
+          </div>
+        </div>
+       </div>
+      </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content p-5">
+          <div class="modal-header border-bottom-0">
+            <h5 class="modal-title text-uppercase font-weight-bold" id="myModalLabel">Напишите нам</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="form-group">
+                <label class="text-uppercase" for="exampleFormControlSelect2">Тема обращения</label>
+                <select class="form-control" id="exampleFormControlSelect2">
+                  <option>Запись на курс</option>
+                  <option>Покупки в интернет-магазине</option>
+                  <option>Регистрация личного кабинета</option>
+                  <option>Сотрудничество</option>
+                  <option>Отзыв</option>
+                  <option>Другая тема</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="text-uppercase" for="formGroupExampleInput">Ваше имя</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+              </div>
+              <div class="form-group">
+                <label class="text-uppercase" for="exampleInputEmail1">Ваш E-mail</label>
+                <input type="email" class="form-control" id="exampleInputEmail1">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Принимаю <a class="text-dark" href="#">соглашения об обработке персональных данных</a></label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-start border-top-0">
+            <button type="button" class="btn btn-custom-grey" data-dismiss="modal">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../dist/js/main.js" charset="utf-8"></script>
+  </body>
+</html>

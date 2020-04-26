@@ -3,13 +3,13 @@
   min-height: 65px;
 }
 
-.custom-row-header-personal-account {
+.custom-row-header-personal-account{
   padding-top: 75px;
   min-height: 125px;
-}
 
-.custom-row-header-personal-account a.nav-link {
-  color: #ffffff;
+  a.nav-link {
+    color: $white;
+  }
 }
 
 .custom-row-header {
@@ -39,17 +39,17 @@
 
 .back-call a{
   font-size: 14px;
-  color: #ffffff;
+  color: $white;
   text-decoration: underline;
 }
 
 .social-network a {
-  color: #ffffff;
+  color: $white;
 }
 
 footer {
   font-size: 14px;
-  color: #ffffff;
+  color: $white;
 }
 
 .custom-row-footer {
@@ -57,44 +57,52 @@ footer {
 }
 
 .feedback-footer a {
-  color: #ffffff;
+  color: $white;
   text-decoration: underline;
 }
 
 .custom-link-list-footer a{
-  color: #ffffff;
+  color: $white;
   text-decoration: underline;
 }
 
 .custom-replenishment-link-footer a{
-  color: #ffffff;
+  color: $white;
   text-decoration: underline;
 }
 
 .custom-payment-systems-footer {
-  color: #ffffff;
+  color: $white;
+
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
 }
 
-#leftSidebarMenu a {
-  display: block;
-  padding: 5px 0;
-  color: #000000;
-}
+#leftSidebarMenu {
+  a {
+    display: block;
+    padding: 5px 0;
+    color: $black;
+  }
 
-#leftSidebarMenu button {
-  color: #000000;
-}
+  button {
+    color: $black;
+  }
 
-#leftSidebarMenu i {
-  font-size: .5em;
-}
+  i {
+    font-size: .5em;
+  }
 
-#leftSidebarMenu .card-header {
-  padding-top: .6rem;
-  padding-bottom: .6rem;
-}
+  .card-header {
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+  }
 
-#leftSidebarMenu .card-body{
-  padding-top: .8rem;
-  padding-bottom: .8rem;
+  .card-body {
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+  }
+
 }

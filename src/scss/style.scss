@@ -1,37 +1,37 @@
 
 // Custom Bootstrap (step 0)
 
-$mint-1: #83c3bc;
-$mint-2: #badad6;
-$purple-1: #9169c2;
-$purple-2: #eaddfb;
-$blue-1: #3fb3dc;
-$blue-2: #cbeffd;
-$green-1: #43baa7;
-$green-2: #c6ebe4;
+$custom-mint-1: #83c3bc;
+$custom-mint-2: #badad6;
+$custom-purple-1: #9169c2;
+$custom-purple-2: #eaddfb;
+$custom-blue-1: #3fb3dc;
+$custom-blue-2: #cbeffd;
+$custom-green-1: #43baa7;
+$custom-green-2: #c6ebe4;
 
 $custom-grey: #e2e2e2;
 
 $colors: (
-  "mint-1": $mint-1,
-  "mint-2": $mint-2,
-  "purple-1": $purple-1,
-  "purple-2": $purple-2,
-  "blue-1": $blue-1,
-  "blue-2": $blue-2,
-  "green-1": $green-1,
-  "green-2": $green-2,
+  "custom-mint-1": $custom-mint-1,
+  "custom-mint-2": $custom-mint-2,
+  "custom-purple-1": $custom-purple-1,
+  "custom-purple-2": $custom-purple-2,
+  "custom-blue-1": $custom-blue-1,
+  "custom-blue-2": $custom-blue-2,
+  "custom-green-1": $custom-green-1,
+  "custom-green-2": $custom-green-2,
   "custom-grey": $custom-grey
 );
 
-$unauthorized-user-primary: $mint-1;
-$unauthorized-user-secondary: $mint-2;
-$parent-primary: $purple-1;
-$parent-secondary: $purple-2;
-$educator-primary: $blue-1;
-$educator-secondary: $blue-2;
-$child-primary: $green-1;
-$child-secondary: $green-2;
+$unauthorized-user-primary: $custom-mint-1;
+$unauthorized-user-secondary: $custom-mint-2;
+$parent-primary: $custom-purple-1;
+$parent-secondary: $custom-purple-2;
+$educator-primary: $custom-blue-1;
+$educator-secondary: $custom-blue-2;
+$child-primary: $custom-green-1;
+$child-secondary: $custom-green-2;
 
 $theme-colors: (
   "unauthorized-user-primary": $unauthorized-user-primary,
@@ -47,7 +47,8 @@ $theme-colors: (
 
 $breadcrumb-divider: quote(">");
 
-$current-user-color-primary: 'unauthorized-user' !default;
+$current-user-color-primary: 'unauthorized-user-primary' !default;
+$current-user-color-secondary: 'unauthorized-user-secondary' !default;
 
 @if ($current-user-group == 'unauthorized-user') {
   $current-user-color-primary: 'unauthorized-user-primary';
@@ -158,3 +159,5 @@ $nav-pills-link-active-bg: #ffffff;
 @import "~@fortawesome/fontawesome-free/scss/brands.scss";
 @import "~@fortawesome/fontawesome-free/scss/regular.scss";
 
+// Custom style
+@import "custom.scss";

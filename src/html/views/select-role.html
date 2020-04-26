@@ -1,0 +1,42 @@
+<% var data = {
+  title: "Cтраница выбора роли",
+  colorPrimary: "unauthorized-user-primary",
+  colorSecondary: "unauthorized-user-secondary",
+}; %>
+<%= _.template(require('./../includes/header-default.html').default)(data) %>
+
+            <h3 class="text-center">Выберите свою роль</h3>
+            <div class="row">
+                <div class="col-12 col-lg-4 mt-3">
+                  <div class="card shadow h-100 p-3">
+                    <img src="images/default.jpg" class="card-img-top rounded-lg" alt="">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Педагог</h5>
+                      <p class="card-text">Вам доступна регистрация в качестве педагога</p>
+                      <a href="#" class="btn btn-outline-dark">Зарегистрироваться</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 mt-3">
+                  <div class="card shadow h-100 p-3">
+                    <img src="images/default.jpg" class="card-img-top rounded-lg" alt="">
+                    <div class="card-body text-center d-flex flex-column align-items-end">
+                      <h5 class="card-title align-self-center">Ребенок</h5>
+                      <p class="card-text align-self-center">...</p>
+                      <p class="card-text align-self-center mt-auto">Ребенка регистрирует педагог или родитель</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 mt-3">
+                  <div class="card shadow h-100 p-3">
+                    <img src="images/default.jpg" class="card-img-top rounded-lg" alt="">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Родитель</h5>
+                      <p class="card-text">Вам доступна регистрация в качестве родителя</p>
+                      <a href="#" class="btn btn btn-outline-dark">Зарегистрироваться</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+<%= _.template(require('./../includes/footer-default.html').default)(data) %>

@@ -30,10 +30,10 @@ const htmlPlugins = generateHtmlPlugins('./src/html/views');
 module.exports = {
   entry: {
     main: './src/js/index.js',
-    unauthorized: './src/scss/unauthorized-user-style.scss',
-    educator: './src/scss/educator-style.scss',
-    child: './src/scss/child-style.scss',
-    parent: './src/scss/parent-style.scss',
+    unauthorized: './src/scss/unauthorized-user.scss',
+    educator: './src/scss/educator.scss',
+    child: './src/scss/child.scss',
+    parent: './src/scss/parent.scss',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
