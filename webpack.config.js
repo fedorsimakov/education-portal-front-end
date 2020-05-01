@@ -6,7 +6,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin'); // installed via
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // installed via npm
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // installed via npm
 const CopyWebpackPlugin = require('copy-webpack-plugin'); // installed via npm
-// const TerserPlugin = require("terser-webpack-plugin");
 
 const generateHtmlPlugins = (templateDir) => {
   const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));

@@ -45,7 +45,6 @@
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jest": "^23.8.2",
     "file-loader": "^6.0.0",
-    "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.2.0",
     "htmlhint": "^0.11.0",
     "jest": "^25.3.0",
@@ -59,7 +58,6 @@
     "stylelint": "^13.3.2",
     "stylelint-config-sass-guidelines": "^7.0.0",
     "stylelint-config-standard": "^20.0.0",
-    "terser-webpack-plugin": "^2.3.5",
     "url-loader": "^4.1.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
@@ -70,7 +68,6 @@
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
     "lodash": "^4.17.15",
-    "metismenu": "^3.0.6",
     "popper.js": "^1.16.1"
   }
 }

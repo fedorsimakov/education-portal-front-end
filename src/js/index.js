@@ -28,5 +28,13 @@ import 'bootstrap';
 
 $(document).ready(() => {
   // console.log('Hello, world');
-});
+  const leftSidebarMenu = $('#leftSidebarMenu .collapse');
 
+  $(leftSidebarMenu).on('show.bs.collapse', function () {
+    $(this).siblings('.card-header').find('i.fas').removeClass('fa-plus').addClass('fa-minus');
+  });
+  $(leftSidebarMenu).on('hide.bs.collapse', function () {
+    $(this).siblings('.card-header').find('i.fas').removeClass('fa-minus').addClass('fa-plus');
+  });
+
+});
