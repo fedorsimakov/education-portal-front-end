@@ -9,18 +9,22 @@ const CopyWebpackPlugin = require('copy-webpack-plugin'); // installed via npm
 
 const generateHtmlPlugins = (templateDir) => {
   const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
-  return templateFiles.map((item) => {
+  const templateFilesFiltered = templateFiles.filter((item) => {
+    const extension = item.slice(item.lastIndexOf('.') + 1);
+    if (extension === 'html') {
+      return true;
+    }
+    return false;
+  });
+  return templateFilesFiltered.map((item) => {
     const indexOfSeparator = item.lastIndexOf('.');
     const name = item.slice(0, indexOfSeparator);
     const extension = item.slice(indexOfSeparator + 1);
-    if (extension === 'html') {
-      return new HtmlWebpackPlugin({
-        filename: `${name}.html`,
-        template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
-        inject: false,
-      });
-    }
-    return false;
+    return new HtmlWebpackPlugin({
+      filename: `${name}.html`,
+      template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
+      inject: false,
+    });
   });
 };
 
